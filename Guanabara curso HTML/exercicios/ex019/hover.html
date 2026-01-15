@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outro Exemplo</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div > p { /*A seta > significa que qualquer p que estiver dentro da div, ele vai fazer algo, porém não vai necessariamente afetar DIRETAMENTE o p, você vai entender quando ler os próximos comentários, aqui ele vai esconder*/
+            display: none;
+        }
+        div:hover > p { /*Aqui significa que quando eu passar o mouse sobre a DIV, ele vai fazer algo para o P, entenda que ele não afeta "DIRETAMENTE" (pelo o que eu entendi :-) )*/
+            display: block;
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <h1>Surpresa!</h1>
+
+    <div>Passe o mouse aqui! <!--A escrita precisa estar aqui dentro para funcionar, pois como você vai referenciar algo que esta fora da sua área de alcance?-->
+        <p>SURPRESA SEU BOCÓ!!!</p> <!--Aqui é naonde toda a magia acontece--> 
+    </div>
+
+    <p>Isso é uma PseudoClasse em funcionamento!</p>
+</body>
+</html>

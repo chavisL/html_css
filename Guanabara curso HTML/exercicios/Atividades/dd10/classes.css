@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+/*O reforço altera pequenos detalhes no site. Alterando as tags que estão como complemento no index*/
+
+/*Reforço*/
+strong {
+    color: var(--cor3);
+}
+
+/*Classes*/
+a.link {
+    color: var(--cor3);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a.link::after {
+    content: "\1F517"; /* Use aqui "\" para adicionar emojis em CONTENT, nas outras não precisa só o &#x mesmo*/
+}
+
+/*Img1*/
+picture.regular {
+    width: 100%;
+    padding: 0px;
+}
+
+img.width {
+    min-width: 400px;
+    max-width: 800px;
+    width: 100%;
+}
+
+/*Img2*/
+picture.regular_irina {
+    width: 100%;
+    padding: 0px;
+}
+
+img.width_irina { /*SEMPRE que for para centralizar uma imagem, coloque display block, pois inline não centraliza com margin auto, sim usa-se margin auto para centralizar*/
+    display: block;
+    margin: auto;
+    min-width: 400px;
+    max-width: 760px;
+    width: 100%;
+}
+
+/*Img3*/
+img.width_droid {
+    display: block;
+    margin: auto;
+}
+
+/*Iframe*/
+div.green_div {
+    background-color: var(--cor5);
+    padding: 30px;
+}
+
+iframe.width_iframe {
+    display: block;
+    margin: auto;
+    height: 400px;
+    width: 100%; 
+    padding: 0px;
+    margin: 0px;
+}
+

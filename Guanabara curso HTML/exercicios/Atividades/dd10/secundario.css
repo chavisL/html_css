@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+/*secundario altera todas as tags de conteúdos, as tags dentor do header, main, etc*/
+
+/*Cabeçalho*/
+header > h1 {
+    text-align: center;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    font-family: var(--fonte1);
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+header > p {
+    text-align: center;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    font-family: var(--fonte0);
+    color: white;
+    padding-bottom: 20px;
+}
+
+header > nav {
+    height: 30px;
+}
+
+header > nav > a{
+    font-family: var(--fonte0);
+    color: white;
+    text-decoration: none;
+    padding: 6px 10px;
+    transition-duration: 0.3s;
+}
+
+/*Article*/
+main > article > * {
+    padding: 20px;
+    text-align: justify;
+}
+
+main > article > h1 {
+    font-family: var(--fonte2);
+    color: var(--cor4);
+}
+
+main > article > h2 {
+    background-image: linear-gradient(90deg, #c5ebd6, white);
+    font-family: var(--fonte2);
+    color: var(--cor4);
+    padding: 0px;
+    margin: 20px;
+    text-indent: 10px;
+}
+
+main > article > p {
+    text-indent: 40px;
+    font-family: var(--fonte0);
+    line-height: 1.5em;
+}
+
+/*Aside*/
+
+main > article > aside {
+    background-color: var(--cor0);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+}
+
+main > article > aside > p {
+    text-indent: 40px;
+    font-family: var(--fonte0);
+    padding: 10px;
+    line-height: 1.5em;
+}
+
+main > article > aside > h3 {
+    font-family: var(--fonte0);
+    background-color: var(--cor3);
+    color: white;
+    padding: 10px;
+    margin: -20px -20px 10px -20px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+main > article > aside > ul {
+    font-family: var(--fonte0);
+    list-style-type: '\2714\0020\0020'; /*Aqui também se usa a contra barra "----\----\----"*/
+    columns: 2;
+    padding: 5px 0px 5px 10px;
+    text-decoration: none;
+}
+
+main > article > aside > ul > li > abbr {
+    text-decoration: underline;
+}
+
+/*Footer*/
+footer {
+    font-family: var(--fonte0);
+    background-color: var(--cor5);
+    color: white;
+    text-align: center;
+    padding: 5px;
+    margin-top: 30px;
+}
+
+/*!DETALHES!*/
+
+/*header*/
+header > nav > a:hover {
+    background-color: rgba(198, 255, 198, 0.2);
+    border-radius: 5px;
+    color: rgb(127, 255, 159);
+}
+
+/*main*/
+p > a:hover {
+    color: var(--cor4);
+    text-decoration: underline;
+}
+
+

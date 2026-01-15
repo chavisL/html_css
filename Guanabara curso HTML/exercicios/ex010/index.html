@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+
+    <h1>Imagem dinâmica</h1>
+    <p>Elas vão arrumar a imagem de acordo com o tamanho da tela em que você está.</p>
+
+    <!--Adicionamos 50px a mais, pois ainda há uma "folga", significa que a barra de rolagem horizontal (que fica em baixo) não vai mais ficar ali, ela ainda continua aparecendo se deixar exatamente em 1000, por isso aumentamos um pouco a mais-->
+    <!--A ordem é crescente, do menor ao maior, tenha isso em mente!-->
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/letra-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/letra-m.png" type="image/png">
+        <img src="imagens/letra-g.png" alt="Imagem Flexível">
+    </picture>
+
+    <h1>Reproduzindo áudio</h1>
+    <audio preload="auto" controls> <!--preload tem auto, metadata e none. audio tem controls, autoplay e loop-->
+        <source src="audio/ai-que-delicia-mickey.mp3" type="audio/mpeg">
+        <source src="audio/ai-que-delicia-mickey.ogg" type="audio/ogg">
+        <source src="audio/ai-que-delicia-mickey.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir o áudio. <a href="audio/ai-que-delicia-mickey.mp3" download="ai-que-delicia-mickey.mp3" type="audio/mp3">Clique aqui para fazer download</a></p>
+    </audio>
+
+    <p>Na tag audio temos o atributo <strong>preload</strong> é nele que definimos a forma com que o áudio será carregado, e a partir dele temos:</p>
+    <ul>
+        <li><b>metadata:</b> O áudio terá somente os metadados carregados, mas não inteiro</li>
+        <li><b>none:</b> Não carrega até que o usuário clique no play</li>
+        <li><b>auto:</b> Carrega todo o áudio</li>
+    </ul>
+
+    <p>Também há atributos que não precisam de valores em áudio:</p>
+
+    <ul>
+        <li><b>autoplay:</b>Quando abrir o site ele já vai tocar o áudio automaticamente</li>
+        <li><b>controls:</b> Mostra todos os controles disponíveis para áudio</li>
+        <li><b>loop:</b> Repete eternamente</li>
+    </ul>
+    
+</body>
+</html>

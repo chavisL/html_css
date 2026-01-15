@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1>Modelo de caixa [conceito]</h1>
+    <p>Basicamente o modelo de caixas consiste em organizar as tags em caixas, cada uma delas são caixas onde podemos colocar conteúdo, usá-las para editar e complementar outras tags.</p>
+    <p>Temos dois tipos de caixas, as <strong>box-level</strong> e as <strong>inline-level</strong></p>
+    <hr>
+
+    <h2>Box-Level</h2>
+    <p>A box-level é uma caixa que ocupa a largura total da esquerda para a direita (no caso do site, vai ocupar uma linha toda da esquerda para direita no site)</p>
+    <ul>
+        <li>Ocupa a largura total da esquerda para a direita
+        <li>Pode mudar as propriedades de Size (como height e width)
+        <li>Pode conter outros elementos box-level e inline-level
+    </ul>
+    <hr>
+
+    <h2>inline-level</h2>
+    <p>Diferentemente da box-level, não pode mudar seu tamanho nessa, pois ela é EM LINHA, e isso desregularia tudo, então o display inline impede que você mude o tamanho, mas se transformar ele em block, pode mudar!</p>
+    <ul>
+        <li>Ocupa a área que for necessária, em formato de "texto" mesmo
+        <li>Não pode mudar propriedades de Size (como height e width)
+        <li>Ele não pode conter outros elementos box-level dentro, somente outros inline-level como &lt;strong&gt;
+    </ul>
+    <hr>
+    <img src="imagens/boxlevel.jpeg" alt="Modelo de Caixa Representação">
+    <hr>
+
+    <h2>Propriedades importantes do modelo de caixas</h2>
+
+    <p class="termo">Conteúdo</p>
+    <p>O conteúdo é a parte onde textos são colocados, imagens, etc. Ele não precisa necessariamente ficar em volta certinho como você pode ver abaixo, como pode ver abaixo ele é em forma de caixa box-level, então vai ocupar a linha toda, nem sempre vai ser perfeito, e não há nada de errado nisso.</p>
+
+    <p style="background-color: aqua;">Conteúdo é parte em azul</p>
+    
+    <p>Claro que se quiser modificar o tamanho para não ficar do jeito acima, use width e height, mas tome cuidado! Pois isso pode afetar o site dependendo de como aplicar. Veja abaixo:</p>
+    
+    <p style="background-color: aqua; width: 175px;" >Conteúdo é a parte em azul</p>
+    
+    <p class="termo">Padding</p>
+    <p>O padding é uma camada em volta do conteúdo. Veja abaixo:</p>
+    
+    <p style="border: 3px solid; padding: 10px;"><mark style="background-color: aqua;">Padding é a camada em branco entre a borda e o conteúdo</mark></p>
+
+    <p class="termo">Border</p>
+    <p>Acima já mostra a borda, bem ela fica em volta do padding.</p>
+
+    <p class="termo">Margin</p>
+    <p>A margin fica em volta da Border, mas para visualizar aqui não vai ser possível, pois não da para colorir a margin, mas você consegue visualiza-lá pelo Google Devtools!</p>
+
+    <p style="border: 3px solid; margin: 30px;">Margin fica em volta da border</p>
+
+    <p class="termo">Outline</p>
+    <p>Este é bem pouco usado, mas é possível usá-lo ainda, ele fica entre a borda e o margin, porém ele se contém dentro do margin, é como se ele fosse uma extremidade do margin.</p>
+
+    <p style="border: 3px solid; outline: 3px solid red;">Outline é o em vermelho</p>
+
+</body>
+</html>
