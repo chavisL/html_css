@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+
+    <style>
+        #container {
+            background-image: url(imagens/wallpaper006.jpg);
+            background-size: 100% 100%;
+
+            position: relative;
+            height: 96vh;
+            padding: 10px;
+            background-color: blueviolet;
+        }
+
+        #conteudo {
+            background-image: url(imagens/wallpaper002.jpg);
+            background-size: 100% 100%;
+
+            position: absolute;
+            height: 200px;
+            width: 200px;
+
+            top: 50%;
+            left: 50%;
+
+            transform: translate(-50%, -50%);
+        }
+
+        /*Aqui as coisas começam a ficar difíceis, antes de tudo a position relative vai ser relativa de acordo com outros elementos no site. Já o absoluto pode ser alterado sem que precise de outros elementos na tela por códigos no caso, ele vai sobrepor outros elementos.
+        
+        No absolute fica mais fácil de se usar top, left, right, bottom. No relative também da, mas é melhor trabalhar com px, em, %, etc.
+
+        Temos o código transform, que pode mudar atributos importantes para certos elementos, no translate podemos alterar o ponto principal de um elemento, esse ponto principal seria o ponto de acordo com a mudança de posição de imagens, ele padronizado fica no topo superior esquerdo. Mas se quiser alterar isso utilize porcentagens para centraliza-lo ou px para colocar em locais específicos no seu site.
+        */
+
+    </style>
+</head>
+<body>
+    
+    <section id="container">
+
+        <article id="conteudo">
+
+        </article>
+
+    </section>
+
+</body>
+</html>

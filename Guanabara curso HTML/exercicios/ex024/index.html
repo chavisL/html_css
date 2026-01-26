@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas - colunas grupos</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            text-align: center;
+            border-collapse: collapse;
+            width: 800px;
+            height: 250px;
+            vertical-align: center;
+        }
+        td, th {
+            border: 1px solid black;
+        }
+        th {
+            background-color: grey;
+            color: white;
+        }
+
+        .coluna1 {
+            background-color: aqua;
+        }
+        .coluna2 {
+            background-color: aquamarine;
+        }
+        .coluna3 {
+            background-color: bisque;
+        }
+        .coluna4 {
+            background-color: blueviolet;
+        }
+        div#container {
+            overflow-x: auto; /*Este senhor facilita sua vida, fazendo com que ele crie uma barra de rolagem*/ 
+        }
+    </style>
+</head>
+<body>
+    <!--Esse é o responsável por permitir selecionar colunas para edições, criando pequenos cols que correspondem a quantidade de colunas que temos, use span se quiser selecionar mais de 2 colunas-->
+
+    <div id="container">
+        <table>
+            <colgroup>
+            <col class="coluna1">
+            <col class="coluna2">
+            <col class="coluna3">
+            <col class="coluna4">
+            </colgroup>
+            <tr>
+                <th>Casa</th>
+                <th>Número</th>
+                <th>Código</th>
+                <th>Nº Habitantes</th>
+                <th>...</th>
+                <th>...</th>
+                <th>...</th>
+            </tr>
+            <tr>
+                <td>001</td>
+                <td>1234</td>
+                <td>1-67261</td>
+                <td>3</td>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+            </tr>
+            <tr>
+                <td>002</td>
+                <td>1342</td>
+                <td>0-88171</td>
+                <td>6</td>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+            </tr>
+            <tr>
+                <td>003</td>
+                <td>2132</td>
+                <td>0-12312</td>
+                <td>12</td>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+            </tr>
+            <tr>
+                <td>004</td>
+                <td>4121</td>
+                <td>3-17182</td>
+                <td>7</td>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+            </tr>
+            <tr>
+                <td>005</td>
+                <td>2341</td>
+                <td>2-19381</td>
+                <td>4</td>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+            </tr>
+        </table>
+    </div>
+
+    <p>Experimente diminuir o a janela do site!</p>
+</body>
+</html>

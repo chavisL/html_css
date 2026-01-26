@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de fundo de imagem</title>
+    <style>
+        div.quadrado {
+            display: inline-block;
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: lightgray;
+            width: 300px;
+            height: 300px;
+        }
+        div#q1 {
+            background-color: skyblue;
+        }
+        div#q2 {
+            background-image: linear-gradient(to bottom, blue, green)
+        }
+
+        div#q3 {
+            background-image: url(imagens/pattern003.png);
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="quadrado" id="q1">
+
+    </div>
+    <div class="quadrado" id="q2">
+
+    </div>
+    <div class="quadrado" id="q3">
+
+    </div>
+
+    <p>Acima você pode visualizar 3 quadrados com imagens diferentes como background.</p>
+    <ul>
+        <li>O primeiro se usa o - background-color: "cor sólida";
+        <li>O segundo se usa o - background-image: linear-gradient("direção", "cor sólida", "cor");
+        <li>E o terceiro se usa o mesmo do segundo, mas com um atributo diferente - background-image: url("arquivo de imagem");
+    </ul>
+    <p>Como pode ver no terceiro exemplo referenciamos uma url para ser usada como fundo, ela se ajusta de acordo com o tamanho da forma em que foi atribuída.</p>
+</body>
+</html>

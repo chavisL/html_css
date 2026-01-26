@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --cor1: #90D7FF;
+    --cor2: #4F6272;
+    --cor3: #FFEAD0;
+}
+
+/*CABEÇALHO*/
+header {
+    background-image: linear-gradient(to bottom,#90D7FF, #4f89b8);
+    width: auto;
+    height: 200px;
+}
+
+header > a > img {
+    display: inline;
+}
+
+header > h1 {
+    display: inline;
+    width: auto;
+    height: max-content;
+}
+
+header > p {
+    display: inline;
+}
+
